@@ -27,6 +27,10 @@ const webpackConfig = (env): Configuration => ({
             },
             exclude: /dist/,
          },
+         {
+            test: /\.css$/i,
+            use: ["style-loader", "css-loader", "postcss-loader"],
+          },
       ],
    },
    plugins: [

@@ -1,25 +1,26 @@
-*{
-   margin: 0;
-}
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@600&display=swap");
 
-a{
-   text-decoration: none;
-}
-h1{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-}
-h2{
-
-}
-h3{
-
-}
-h4{
-
-}
-h5{
-
-}
-h6{
-
+@layer base {
+   h1 {
+      @apply font-Oswald text-h1;
+   }
+   h2 {
+      @apply font-Oswald text-h2;
+   }
+   h3 {
+      @apply font-Oswald text-h3;
+   }
+   h4 {
+      @apply font-Lato text-h4;
+   }
+   h5 {
+      @apply font-Lato text-h5;
+   }
+   h6 {
+      @apply font-Lato text-h6;
+   }
 }

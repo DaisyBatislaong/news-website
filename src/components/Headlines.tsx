@@ -5,7 +5,7 @@ const Headlines = (): JSX.Element => {
 
    React.useEffect(() => {
       const getHeadlinesData = () => {
-         fetch("https://newsapi.org/v2/top-headlines?country=us&apiKey=fe35c73a2fba43ae8248863d965393b5")
+         fetch("https://newsapi.org/v2/top-headlines?language=en&apiKey=fe35c73a2fba43ae8248863d965393b5")
             .then((response) => response.json())
             .then((data) => {
                const articles = data.articles;
@@ -26,7 +26,7 @@ const Headlines = (): JSX.Element => {
                   <img src={`${item.urlToImage}`} alt=""/>
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
-                  <p>{item.publishedAt}</p>
+                  <p>{item.source.name}</p>
                </div>
          
             )
