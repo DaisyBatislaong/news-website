@@ -1,10 +1,12 @@
 import React from "react";
+import Home from "./views/Home";
 
 const App = (): JSX.Element => {
+
   return (
-    <div>
-      <h1>Awesome</h1>
-    </div>
+    <>
+      <Home/>
+    </>
   );
 };
 
